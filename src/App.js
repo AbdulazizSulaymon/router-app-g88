@@ -17,7 +17,7 @@ const routes = [
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
+      <Header />
 
       {/* Switchni qo'yyapmiz */}
       <Switch>
