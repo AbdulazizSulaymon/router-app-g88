@@ -1,3 +1,13 @@
 .logo {
   height: 40px;
 }
+
+header.dark {
+  background-color: rgb(53, 53, 53) !important;
+  color: white !important;
+}
+
+header.light {
+  background-color: white !important;
+  color: rgb(53, 53, 53) !important;
+}

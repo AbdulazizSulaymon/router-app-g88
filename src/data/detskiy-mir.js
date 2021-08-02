@@ -3,7 +3,8 @@ const data = [
         img: "https://apollo-olx.cdnvideo.ru/v1/files/y6m3ukec3t5r1-UZ/image;s=644x461",
         title: "Detiski kravat My Baby",
         price: "700 000 сум",
-        location: "Ташкент, Алмазарский район"
+        location: "Ташкент, Алмазарский район",
+
     },
     {
         img: "https://apollo-olx.cdnvideo.ru/v1/files/pg0su307ilp92-UZ/image;s=644x461",

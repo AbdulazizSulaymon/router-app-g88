@@ -3,7 +3,7 @@ import transport from "./transport";
 
 const data = {
     "detskiy-mir": detskiyMir,
-    "transport": transport
+    "transport": transport,
 }
 
 export default data;
