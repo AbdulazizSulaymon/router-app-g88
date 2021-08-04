@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Mobileapps from './pages/Mobileapps';
 import ThemeContext from './theme-context';
 import colors from './data/colors';
+import ProductDetails from './pages/ProductDetails';
 
 function App() {
   const [theme, setTheme] = useState("dark");
@@ -21,7 +22,8 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/mobileapps" component={Mobileapps} />
-          <Route path="/:category" > <Category /> </Route>
+          <Route path="/:category" exact > <Category /> </Route>
+          <Route path="/:category/:id" > <ProductDetails /> </Route>
         </Switch>
       </ThemeContext.Provider>
     </div>
