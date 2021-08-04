@@ -1,10 +1,13 @@
-import "./Footer.css"
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from "react-router-dom"
+import FooterWrapper from "./FooterWrapper";
+import ThemeContext from "../../theme-context";
 
 const Footer = () => {
+    const { colors } = useContext(ThemeContext);
+
     return (
-        <footer className="bg-dark">
+        <FooterWrapper className="bg-dark" colors={colors}>
             <div className="container  py-5">
                 <div className="row">
                     <div className="col-md-4">
@@ -29,7 +32,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-        </footer>
+        </FooterWrapper>
     )
 }
 

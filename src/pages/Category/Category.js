@@ -1,8 +1,8 @@
-import "./Category.css"
 import React from 'react'
 import { useParams } from "react-router-dom"
 import Container from "../../containers/Container";
 import datas from "./../../data";
+import CategoryWrapper from './CategoryWrapper';
 
 const Category = (props) => {
     const { category } = useParams();
@@ -12,7 +12,7 @@ const Category = (props) => {
 
     return (
         <Container>
-            <div className="container py-5">
+            <CategoryWrapper className="container py-5" >
                 <h1 className="mb-5">Category: {category}</h1>
                 <div className="row">
                     {data?.map(v =>
@@ -25,7 +25,7 @@ const Category = (props) => {
                         </div>
                     )}
                 </div>
-            </div>
+            </CategoryWrapper>
         </Container>
     )
 }
